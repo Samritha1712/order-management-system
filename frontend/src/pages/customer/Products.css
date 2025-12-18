@@ -1,0 +1,149 @@
+.products-page {
+  padding: 24px;
+}
+
+.page-header {
+  margin-bottom: 24px;
+}
+
+.page-header h2 {
+  margin: 0 0 8px 0;
+  font-size: 24px;
+  font-weight: 600;
+  color: #262626;
+}
+
+.page-header p {
+  margin: 0;
+  color: #8c8c8c;
+  font-size: 14px;
+}
+
+.filters {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.filter-group {
+  display: flex;
+  align-items: center;
+}
+
+.products-grid {
+  margin-top: 24px;
+}
+
+.ant-card {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.ant-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.ant-card-cover img {
+  border-radius: 8px 8px 0 0;
+}
+
+.ant-card-meta-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.ant-card-meta-description {
+  color: #666;
+}
+
+.product-card .ant-card-actions {
+  padding: 10px 12px;
+}
+
+.product-card .ant-card-actions > li {
+  margin: 0 0 10px 0;
+}
+
+.product-card .ant-card-actions > li:last-child {
+  margin-bottom: 0;
+}
+
+.product-card .ant-card-actions > li > span {
+  padding: 0;
+}
+
+.product-card .ant-card-actions > li:nth-child(1) {
+  justify-content: flex-start;
+}
+
+.product-card .ant-input-number {
+  min-width: 84px;
+}
+
+.ant-tag {
+  border-radius: 4px;
+  font-size: 12px;
+  padding: 2px 8px;
+}
+
+.ant-tag-success {
+  background: #f6ffed;
+  border-color: #b7eb8f;
+  color: #52c41a;
+}
+
+.ant-tag-warning {
+  background: #fffbe6;
+  border-color: #ffe58f;
+  color: #faad14;
+}
+
+.ant-tag-error {
+  background: #fff2f0;
+  border-color: #ffccc7;
+  color: #ff4d4f;
+}
+
+.ant-btn-primary {
+  background: #1890ff;
+  border-color: #1890ff;
+  border-radius: 6px;
+  height: 40px;
+  font-weight: 500;
+}
+
+.ant-btn-primary:hover {
+  background: #40a9ff;
+  border-color: #40a9ff;
+}
+
+.ant-input-search {
+  border-radius: 6px;
+}
+
+.ant-select {
+  border-radius: 6px;
+}
+
+.ant-select-selector {
+  border-radius: 6px !important;
+}
+
+@media (max-width: 768px) {
+  .filters {
+    flex-direction: column;
+  }
+  
+  .filter-group {
+    width: 100%;
+  }
+  
+  .ant-input-search,
+  .ant-select {
+    width: 100% !important;
+  }
+}
